@@ -1,0 +1,341 @@
+
+@font-face {
+  font-family: 'DCM';
+  src: url(dcm.otf);
+}
+
+@font-face {
+  font-family: 'OSR';
+  src: url(osr.ttf);
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1.5;
+    font-family: 'OSR', sans-serif;
+    font-size:100%;
+    text-align:center;
+    background:#F5F5F5;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+a {
+    text-decoration:none;
+}
+
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.wrapper a {
+    color: #ff2e4e;
+    text-decoration: underline;
+}
+
+.appInfo .appDescription {
+    padding:0 50px;
+}
+
+.appInfo .contactInfo {
+    padding:0 50px;
+}
+
+.main {
+    background:#FFF;
+}
+
+.appInfo {
+
+    padding:150px 0;
+}
+
+.appInfo .appIcon {
+    width:85px;
+    height:85px;
+    background: url(fine.png)center no-repeat;
+    background-size:80px 80px;    
+    margin:auto;
+}
+
+.appInfo .appName {
+    font-family:'DCM';
+    font-size:30px;
+    margin:30px 0 20px;
+}
+.appInfo .appDescription {
+    color:#999;
+}
+.appInfo .appDownload {
+    margin:65px 0 0;
+}
+
+
+
+.appInfo .appDownload .appStore {
+    display:block;
+    width:153px;
+    height:50px;
+    background: url(appstore.png)center no-repeat;
+    background-size:153px 50px;    
+    text-indent:-10000px;
+    margin:auto;
+}
+
+
+.social {display:none}
+
+.footer .copyright {
+    margin:20px;
+    color:#999;
+}
+
+.appPreview {
+    display: none;
+}
+
+@media screen and (min-width:800px) {
+    body {
+        font-size:13px;
+        animation: onload 1.5s;
+    }
+    
+    .main {
+        background:#FFF;
+        overflow:auto;
+    }
+    
+    .wrapper {
+        width:960px;
+        margin:auto;
+        overflow:auto;
+    }
+
+    
+    
+    .appInfo {
+        float:left;
+        width:350px;
+        padding:200px 100px 50px 80px;
+    }
+    
+    .appInfo .appIcon {
+        width:85px;
+        height:85px;
+        background: url(fine.png)center no-repeat;
+        background-size:80px 80px;    
+        float:right;
+        clear:both;
+    }
+    
+    .appInfo .appName {
+        font-family:'DCM';
+        font-size:34px;
+        float:right;
+        clear:both;
+        margin:35px 5px 20px;
+    }
+    .appInfo .appDescription {
+        float:right;
+        clear:both;
+        color:#999;
+        text-align:right;
+        width:350px;
+        padding:0;
+    }
+    .appInfo .contactInfo {
+        float:right;
+        clear:both;
+        text-align:right;
+        width:350px;
+        padding:0;
+        margin:15px 0 0;
+    }
+    .appInfo .appDownload {
+        float:right;
+        clear:both;
+        margin:45px 0 0;
+    }
+    
+    .appInfo .appDownload .appStore {
+        display:block;
+        width:153px;
+        height:50px;
+        background: url(appstore.png)center no-repeat;
+        background-size:153px 50px;    
+        text-indent:-10000px;
+        float:right;
+    }
+    
+    .appPreview {
+        display: block;
+        float:left;
+        width: 312px;
+        height: 640px;
+        margin:80px 0;
+        background: url(preview.jpg)center no-repeat;
+        background-size:312px 640px;    
+        position: relative;
+    }
+
+    .appPreview video {
+        display: block;
+        position: absolute;
+        width: 264px;
+        left: 24px;
+        top: 220px;
+    }
+
+    #playBtn {
+        display: block;
+        position: absolute;
+        width: 264px;
+        height: 150px;
+        left: 24px;
+        top: 220px;
+        z-index: 99999;
+        background: url(play_bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50px;
+    }
+    
+    @keyframes onload{
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+}
+
+
+.document {
+    background:#FFF;
+    padding:100px  40px;
+    text-align:left;
+}
+
+.time {
+    text-align: center;
+    font-family: none;
+    font-size: 16px;
+}
+
+.document h1,h2,h3 {
+    font-family:'DCM';
+}
+
+.document h1{
+    font-size:55px;
+    margin:45px 0;
+    text-align:center;
+}
+
+.document h1.zh{
+    font-size: 40px;
+}
+
+.document h2{
+    font-size:35px;
+    margin:55px 0 35px;
+}
+
+.c5 .c2{
+    font-family:'DCM';
+    font-size:26px;
+    font-weight: bold;
+    margin:25px 0 10px;
+    display: inline-block;
+}
+
+.c4 .c3{
+    font-family:'DCM';
+    font-size:26px;
+    font-weight: bold;
+    margin:20px 0 10px;
+    display: inline-block;
+}
+
+.c2.c5 {
+    font-size: 14px;
+    list-style: circle outside;
+}
+
+.c3 .c4{
+    font-family:'DCM';
+    font-size:26px;
+    font-weight: bold;
+    margin:20px 0 10px;
+    display: inline-block;
+}
+
+ul .c0 {
+    font-size: 14px;
+    list-style: circle outside !important;
+}
+
+.c4 .c2{
+    font-family:'DCM';
+    font-size:20px;
+    font-weight: bold;
+    margin:15px 0 10px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.c5 .c3 {
+}
+
+.document p {
+    margin:10px 0;
+}
+
+.document  li {
+    margin:10px 0 10px 20px;
+    list-style:disc outside;
+}
+
+.document .home {
+    width:85px;
+    height:85px;
+    background: url(fine.png)center no-repeat;
+    background-size:80px 80px;    
+    display:block;
+    text-indent:-10000px;
+    margin:10px auto 80px;
+}
+
